@@ -1,0 +1,147 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(bg-01.jpg) no-repeat;
+  background-size: cover;
+}
+a {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+  color: #a64bf4;
+}
+
+.login
+{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+	margin:auto;
+}
+.login h2
+
+{
+	margin: 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+.login .input1
+{
+	position: relative;
+}
+
+
+.login .input1 input
+{
+   width: 100%;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   letter-spacing: 1px;
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   outline: none;
+   background: transparent;
+}
+.login .input1 label
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	letter-spacing: 1px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .50s;
+}
+.login .input1 input:focus ~ label,
+.login .input1 input:valid ~ label
+{
+	top: -18px;
+	left: 0;
+	color: #03a9f4;
+	font-size:12px;
+
+}
+.login input[type="submit"]
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9fa;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+}
+
+
+.signin
+{
+	font-family: sans-serif;
+	font-size: 15px;
+	color: #fff;
+  text-decoration: none;
+  
+}
+

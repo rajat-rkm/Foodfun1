@@ -1,0 +1,105 @@
+<!--book html-->
+<!Doctype html>
+<html>
+<head>
+     <title>My restro babe </title>
+     <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1"">
+
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="restrostyle.css">
+ </head>
+ <body>
+ 	<header id="myheader">
+    <h1>Food fun</h1>
+    
+ 		<nav class="nav">
+      <div class="left">
+
+ 			<ul class="drop1">
+        <li class="li1">
+ 				 <a  href="my index.html"><i class="fa fa-home"></i>HOME</a>
+        </li>
+        <li class="li1">
+         <a ><i class="fas fa-chevron-circle-down"></i>MENU</a>
+         <ul class="drop">
+         	<li class="li2"><a href="indianfood.html">INDIAN</a></li>
+         	<li class="li2"><a href="italianfood.html">ITALIAN</a></li>
+            <li class="li2"><a href="mexicanfood.html">MEXICAN</a></li>
+            <li class="li2"><a href="chinesefood.html">CHINESE</a></li>
+         </ul>
+
+         </li>
+
+         <li class="li1">
+          <a class="active" href="book.html"><i class="fas fa-book-reader"></i>BOOK</a>
+          
+         </li>
+
+         <li class="li1">
+         <a href="offer.html"><i class="fas fa-award"></i>OFFER</a>
+       </li>
+
+       <li class="li1">
+          <a href="gallery.html"><i class="fas fa-images"></i>GALLERYS</a>
+       </li>
+ 			  </ul>
+      </div>
+ 			</nav>
+ 	</header>
+
+<div class="back1">
+
+<div class="container1">
+
+
+			<div class="formbox1">
+
+				<form name="frm1" action="http://localhost:8084/FoodFun/BookTable" method="post">
+  	<p>Select Date</p>
+  	<input type="date" name="date1">
+        
+    <p>No of Guest</p>
+     <select name="sel" class="dropdown2">
+		<option disabled value >Select</option>
+		<option value="General">2</option>
+		<option value="Celebration">2-4</option>
+		<option value="Official">5-8</option>
+		<option value="Other">10+</option>
+    </select>
+   <p>Purpose</p>
+   <select name="view" class="dropdown2">
+		<option disabled value name="View">Select Your View</option>
+		<option value="General">General</option>
+		<option value="Celebration">Celebration</option>
+		<option value="Official">Official</option>
+		<option value="Other">Other</option>
+    </select>
+	<p>Table Type</p>
+	<ul id="ul">
+      <li class="hover1"><input id="in1" type="radio" name="type" value="Personal Cabin" checked>Personal Cabin</li>
+      <li class="hover1"><input id="in1" type="radio" name="type" value="Open Garden">Open Garden</li>
+      <li class="hover1"><input id="in1" type="radio" name="type" value="General">General</li>
+    </ul>
+    <textarea name="message1" placeholder="Any Extra Facilities"></textarea>
+    <p>Personal Info</p>
+      <h5 class="sub-heading">We require your contact details for confirmation and feedbacks</h5>
+       <input type="text" placeholder="Enter Your Name" name="name" required>
+       <input type="tel" placeholder="Contact Number" name="contact" required>
+       <input type="text" placeholder="Enter Email" name="email">
+       <textarea name="textbox" placeholder="Any Message Query"></textarea> 
+     <button  id="booksubmit" type="submit" class="btn4"><b>BOOK YOUR TABLE</b></button>
+      
+  		</form>
+
+          
+			</div>
+
+
+
+ 		
+</div>
+</div>
+ </body>
+ </html>
